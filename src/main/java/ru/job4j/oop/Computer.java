@@ -14,6 +14,17 @@ public class Computer {
         this.cpu = cpu;
     }
 
+    public Computer(boolean multiMonitor, double ssd, String cpu) {
+        this.multiMonitor = multiMonitor;
+        this.ssd = (int)ssd;
+        this.cpu = cpu;
+    }
+
+    public Computer(int ssd, String cpu) {
+        this.cpu = cpu;
+        this.ssd = ssd;
+    }
+
     public void printInfo() {
         System.out.println("Много мониторов: " + this.multiMonitor);
         System.out.println("SSD: " + this.ssd + " GB");
@@ -27,5 +38,10 @@ public class Computer {
         comp.printInfo();
         Computer computer1 = new Computer();
         computer1.printInfo();
+        Computer first = new Computer();
+        Computer second = new Computer(500, "Baikal 2");
+        second.printInfo();
+        Computer third = new Computer(true, 512.0, "COOL");
+        third.printInfo();
     }
 }
