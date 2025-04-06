@@ -16,7 +16,7 @@ public class Computer {
 
     public Computer(boolean multiMonitor, double ssd, String cpu) {
         this.multiMonitor = multiMonitor;
-        this.ssd = (int)ssd;
+        this.ssd = (int) ssd;
         this.cpu = cpu;
     }
 

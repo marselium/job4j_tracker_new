@@ -6,7 +6,7 @@ public class Parent {
     private int age;
 
     public Parent(String name, int age) {
-        this.age =age;
+        this.age = age;
         this.name = name;
     }
 }

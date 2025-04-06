@@ -11,6 +11,7 @@ public class Calculator {
     private static int minus(int y) {
         return x - y;
     }
+
     private int multiply(int y) {
         return x * y;
     }
@@ -27,7 +28,7 @@ public class Calculator {
         int result = Calculator.sum(10);
         System.out.println("Sum " + result);
         Calculator calculator = new Calculator();
-        result = calculator.multiply( 5);
+        result = calculator.multiply(5);
         System.out.println("Multiply " + result);
         result = Calculator.minus(1);
         System.out.println("Minus " + result);
