@@ -10,14 +10,14 @@ public class Store {
         products[1] = bread;
         products[2] = egg;
         for (Product product : products) {
-            System.out.println(product.getName() +  " - " + product.getCount());
+            System.out.println(product.getName() + " - " + product.getCount());
         }
         System.out.println();
         System.out.println("Replace milk to oil.");
         Product oil = new Product("Oil", 11);
         products[0] = oil;
         for (Product product : products) {
-            System.out.println(product.getName() +  " - " + product.getCount());
+            System.out.println(product.getName() + " - " + product.getCount());
         }
         System.out.println();
         System.out.println("Shown only product.count > 10");

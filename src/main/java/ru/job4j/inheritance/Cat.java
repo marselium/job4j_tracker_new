@@ -1,6 +1,6 @@
 package ru.job4j.inheritance;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
     public boolean canPurr() {
         return true;
     }

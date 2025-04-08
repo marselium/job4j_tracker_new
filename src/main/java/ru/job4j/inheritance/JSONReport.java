@@ -6,7 +6,7 @@ public class JSONReport extends TextReport {
         String sl = "\"";
         return "{" + System.lineSeparator()
                 + "\t" + sl + "name" + sl + " : "
-                + sl + name + sl + ","+ System.lineSeparator()
+                + sl + name + sl + "," + System.lineSeparator()
                 + "\t" + sl + "body" + sl + " : "
                 + sl + body + sl + System.lineSeparator()
                 + "}";

@@ -7,10 +7,10 @@ public class Library {
         Book book3 = new Book("Book 3", 123);
         Book book4 = new Book("Clean code", 444);
         Book[] books = new Book[4];
-        books[0] =book1;
+        books[0] = book1;
         books[1] = book2;
         books[2] = book3;
-        books[3] =book4;
+        books[3] = book4;
         for (int i = 0; i < books.length; i++) {
             System.out.println(books[i].getName());
         }
@@ -25,7 +25,7 @@ public class Library {
         }
         System.out.println();
         System.out.println("---Only name \"Clean Code\"---");
-        for (Book book: books) {
+        for (Book book : books) {
             if ("Clean code".equals(book.getName())) {
                 System.out.println(book.getName());
             }
