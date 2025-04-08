@@ -5,7 +5,7 @@ import java.util.Date;
 public class Student {
     private String name;
     private int group;
-    private Date dateOf;
+    private String dateOf;
 
     public String getName() {
         return name;
@@ -23,11 +23,11 @@ public class Student {
         this.group = group;
     }
 
-    public Date getDateOf() {
+    public String getDateOf() {
         return dateOf;
     }
 
-    public void setDateOf(Date dateOf) {
+    public void setDateOf(String dateOf) {
         this.dateOf = dateOf;
     }
 }
