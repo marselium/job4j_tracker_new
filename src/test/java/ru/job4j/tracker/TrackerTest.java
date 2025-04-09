@@ -61,4 +61,26 @@ public class TrackerTest {
         Item[] result = tracker.findByName(second.getName());
         assertThat(result[1].getName()).isEqualTo(second.getName());
     }
+
+    @Test
+    public void whenReplaceItemIsSuccessful() {
+        Tracker tracker = new Tracker();
+        Item first = new Item("First");
+        Item second = new Item("Second");
+        tracker.add(first);
+        int id = first.getId();
+        tracker.replace(id, second);
+        assertThat(tracker.findById(id).getName()).isEqualTo(second.getName());
+    }
+
+    @Test
+    public void whenReplaceItemIsNotSuccessful() {
+        Tracker tracker = new Tracker();
+        Item first = new Item("First");
+        Item second = new Item("Second");
+        tracker.add(first);
+        int id = 99;
+        boolean rsl = tracker.replace(id, second);
+        assertThat(rsl).isFalse();
+    }
 }
