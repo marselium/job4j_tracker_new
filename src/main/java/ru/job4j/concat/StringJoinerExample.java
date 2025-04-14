@@ -9,7 +9,7 @@ public class StringJoinerExample {
         System.out.println(stringJoiner);
         String joined = stringJoiner.toString();
         System.out.println(joined);
-        stringJoiner = new StringJoiner(", ");
+        stringJoiner = new StringJoiner(",\b");
         stringJoiner.add("abc").add("def").add("ghi");
         System.out.println(stringJoiner);
     }
