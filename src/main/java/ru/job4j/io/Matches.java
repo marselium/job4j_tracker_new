@@ -13,7 +13,7 @@ public class Matches {
             String player = turn ? "Первый игрок" : "Второй игрок";
             System.out.println(player + " введите число от 1 до 3: ");
             int matches = inp.nextInt();
-            if (matches <= 3 && matches > 0 && matches <= cnt) {
+            if (matches > 0 && matches <= Math.min(3, cnt)) {
                 cnt -= matches;
                 System.out.println("Спичек осталось: " + cnt);
                 turn = !turn;
