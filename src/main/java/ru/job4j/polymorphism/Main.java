@@ -9,6 +9,7 @@ public class Main {
         townCar.steer();
         townCar.brake();
         townCar.refill();
+        Vehicle.getDragCoefficient();
         System.out.println("Sport car:");
         Vehicle sportCar = new SportCar();
         sportCar.changeGear();
@@ -16,5 +17,6 @@ public class Main {
         sportCar.steer();
         sportCar.brake();
         sportCar.refill();
+        Vehicle.getDragCoefficient();
     }
 }
