@@ -5,8 +5,8 @@ public class StartUI {
     public void init(Input input, Tracker tracker, UserAction[] actions) {
         boolean run = true;
         while (run) {
-            int select = input.askInt("Выбрать: ");
             showMenu(actions);
+            int select = input.askInt("Выбрать: ");
             UserAction action = actions[select];
             run = action.execute(input, tracker);
         }
@@ -15,12 +15,12 @@ public class StartUI {
     private void showMenu(UserAction[] actions) {
         System.out.println("Меню:");
         for (int i = 0; i < actions.length; i++) {
-            System.out.println(i + ". " + actions[i]);
+            System.out.println(i + ". " + actions[i].name());
         }
     }
 
     public static void main(String[] args) {
-        ConsoleInput input = new ConsoleInput();
+        Input input = new ConsoleInput();
         Tracker tracker = new Tracker();
         UserAction[] actions = {
                 new CreateAction(),
