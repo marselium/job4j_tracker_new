@@ -6,6 +6,7 @@ import ru.job4j.tracker.input.ConsoleOutput;
 import ru.job4j.tracker.input.Input;
 import ru.job4j.tracker.input.ValidateInput;
 import ru.job4j.tracker.output.Output;
+import ru.job4j.tracker.shablon.Log4File;
 
 public class StartUI {
     private final Output output;
@@ -36,6 +37,9 @@ public class StartUI {
     }
 
     public static void main(String[] args) {
+        Log4File log = Log4File.getInstance();
+        log.add("add new item");
+        log.save();
         Output output = new ConsoleOutput();
         Input input = new ValidateInput(output, new ConsoleInput());
         Tracker tracker = new Tracker();
