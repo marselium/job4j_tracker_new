@@ -31,15 +31,15 @@ public class SingleTracker {
         return tracker.findAll();
     }
 
-    public Item FindById(Item item) {
+    public Item findById(Item item) {
         return tracker.findById(item.getId());
     }
 
-    public Item[] FindByName(Item item) {
+    public Item[] findByName(Item item) {
         return tracker.findByName(item.getName());
     }
 
-    public boolean Replace(Item item) {
+    public boolean replace(Item item) {
         return tracker.replace(item.getId(), item);
     }
 }

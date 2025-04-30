@@ -1,9 +1,10 @@
 package ru.job4j.polymorphism;
 
-public class FileStore implements Store{
+public class FileStore implements Store {
     private String path;
 
-    public FileStore() { }
+    public FileStore() {
+    }
 
     public FileStore(String path) {
         this.path = path;

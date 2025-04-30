@@ -2,7 +2,7 @@ package ru.job4j.tracker.shablon;
 
 import java.util.Scanner;
 
-public class TriangleOperator extends ShapeOperator{
+public class TriangleOperator extends ShapeOperator {
     private Scanner input = new Scanner(System.in);
 
     @Override

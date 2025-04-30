@@ -1,6 +1,6 @@
 package ru.job4j.tracker.shablon;
 
-public class Rectangle implements Shape{
+public class Rectangle implements Shape {
     int a;
     int b;
 

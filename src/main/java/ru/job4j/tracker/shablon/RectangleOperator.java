@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class RectangleOperator extends ShapeOperator {
     private Scanner input = new Scanner(System.in);
+
     @Override
     public Shape createShape() {
         System.out.print("Введите ширину прямоугольника: ");

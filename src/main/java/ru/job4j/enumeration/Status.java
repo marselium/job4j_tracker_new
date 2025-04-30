@@ -8,7 +8,6 @@ public enum Status {
 
     private final String text;
 
-
     Status(String text) {
         this.text = text;
     }

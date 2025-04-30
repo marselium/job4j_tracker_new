@@ -5,7 +5,7 @@ public class Log4File {
     private String[] messages = new String[1000];
     private int index = 0;
 
-    private Log4File(){
+    private Log4File() {
     }
 
     public static Log4File getInstance() {

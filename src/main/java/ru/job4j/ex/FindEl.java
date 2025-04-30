@@ -15,7 +15,7 @@ public class FindEl {
         return result;
     }
 
-    public static boolean sent (String value, String[] abuses) throws ElementAbuseException {
+    public static boolean sent(String value, String[] abuses) throws ElementAbuseException {
         return true;
     }
 
@@ -33,7 +33,7 @@ public class FindEl {
         String[] values = new String[]{"A", "B", "C"};
         try {
             System.out.println(indexOf(values, "D"));
-        } catch(ElementNotFoundException e){
+        } catch (ElementNotFoundException e) {
             e.printStackTrace();
         }
 
