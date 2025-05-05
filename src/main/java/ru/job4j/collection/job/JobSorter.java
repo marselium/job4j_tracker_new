@@ -1,6 +1,5 @@
-package ru.job4j.collection;
+package ru.job4j.collection.job;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;

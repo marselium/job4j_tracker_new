@@ -1,6 +1,6 @@
 package ru.job4j.tracker.comparator;
 
-import ru.job4j.collection.Job;
+import ru.job4j.collection.job.Job;
 
 import java.util.Comparator;
 
